@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: welcome
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/49e733ec-2e26-4ee6-8353-9058b29a67e8/ # baseUri: localhost:8081
+version: 1.0
+
+/welcome:
+  post:
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                "mesg": "Hello World!"
+              }
